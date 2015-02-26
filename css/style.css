@@ -57,8 +57,7 @@ header section
       letter-spacing: 1em; }
 
 #header_hidden {
-  display: none;
-  max-width: 300px; }
+  display: none; }
 
 /******************
 HIDDEN BLOCKS
