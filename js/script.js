@@ -1,3 +1,12 @@
+
+
+$(document).ready(function(){
+	scrollConverter.activate();
+	$('#contact').hide();
+	$('#social').hide();
+	$('#pricing').hide();
+	$('#header').fadeIn();
+
 $('.contact').on('click',function(){
 	$(this).toggleClass('active');
 	$('#contact').toggle("slide", { direction: "right"  }, 500);
@@ -13,11 +22,4 @@ $('.pricing').on('click',function(){
     $('#pricing').toggle("slide", { direction: "up"  }, 500);
 });
 
-
-$(document).ready(function(){
-	scrollConverter.activate();
-	$('#contact').hide();
-	$('#social').hide();
-	$('#pricing').hide();
-	$('#header').fadeIn();
 });
