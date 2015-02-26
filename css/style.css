@@ -129,7 +129,9 @@ PHOTO SECTION
     padding-top: 3em; }
 
   #header_hidden {
-    display: block; }
+    display: block;
+    position: fixed;
+    top: 0; }
 
   .home {
     padding-top: 3.60em; }
