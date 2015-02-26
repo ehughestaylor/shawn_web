@@ -1,6 +1,7 @@
 body {
   background-color: black;
   height: 100%;
+  width: 100%;
   font-family: "Oxygen", sans-serif; }
 
 .home {
@@ -98,20 +99,6 @@ CONTENT SECTION
   left: 224px;
   z-index: 1; }
 
-@media only screen and (max-width: 667px) {
-  .content {
-    left: 0px; }
-
-  #header_hidden {
-    display: block; }
-
-  #header {
-    display: none; }
-
-  .home {
-    padding-top: 3.60em; } 
-}
-
 /***************
 PHOTO SECTION
 *****************/
@@ -135,5 +122,22 @@ PHOTO SECTION
     #photo_slider td img, #photo_slider th img {
       height: 512px;
       cursor: pointer; }
+
+@media only screen and (min-width: 0px) and (max-width: 667px) {
+  .content {
+    left: 0px;
+    padding-top: 3em; }
+
+  #header_hidden {
+    display: block; }
+
+  .home {
+    padding-top: 3.60em; }
+
+  div.fix {
+    display: none; }
+
+  img {
+    max-height: 400px; } }
 
 /*# sourceMappingURL=style.css.map */
