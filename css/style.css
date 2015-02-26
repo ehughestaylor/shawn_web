@@ -22,7 +22,6 @@ header section
   z-index: 9; }
   #header h1 {
     color: white;
-    width: 223px;
     text-align: center;
     font-size: 2em; }
   #header h3 {
@@ -141,21 +140,19 @@ PHOTO SECTION
   div.text {
     width: 100%; }
 
-  #header nav {
-    text-align: left; }
-    #header nav .contact,
-    #header nav .social,
-    #header nav .pricing {
-      display: inline;
-      padding-top: 0; }
-    #header nav a:hover {
-      background-color: white;
-      color: black;
-      transition-duration: .6s;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin: 0; }
-    #header nav img {
-      max-height: 400px; } }
+  #header nav .contact,
+  #header nav .social,
+  #header nav .pricing {
+    display: inline;
+    padding-top: 0; }
+  #header nav a:hover {
+    background-color: white;
+    color: black;
+    transition-duration: .6s;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0; }
+  #header nav img {
+    max-height: 400px; } }
 
 /*# sourceMappingURL=style.css.map */
