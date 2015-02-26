@@ -22,4 +22,8 @@ $('.pricing').on('click',function(){
     $('#pricing').toggle("slide", { direction: "up"  }, 500);
 });
 
+$('#my_elem').mousewheel(function(event) {
+    console.log(event.deltaX, event.deltaY, event.deltaFactor);
+});
+
 });
