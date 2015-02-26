@@ -1,13 +1,15 @@
+// function horiScroll(){
+// 	if ($(window).width() >= 667){	
+// 		console.log('small');
+// 		scrollConverter.activate();
+// 	} else{
+// 		scrollConverter.deactivate();
+// 	}
+// };
+
 
 
 $(document).ready(function(){
-	scrollConverter.activate();
-	
-	if ($(window).width() <= 667){	
-		console.log('small');
-		scrollConverter.deactivate();
-	}	
-
 	$('#contact').hide();
 	$('#social').hide();
 	$('#pricing').hide();
@@ -32,4 +34,23 @@ $(document).ready(function(){
 	    console.log(event.deltaX, event.deltaY, event.deltaFactor);
 	});
 
+
+	(function () {
+    var mql = window.matchMedia("(orientation: landscape)");
+	//activate plugin only when orientation is landscape
+	if(mql.matches) {  
+			scrollConverter.activate();
+	}		
+	//listen for orientation changes and if it was changed - reload page without plugin activation
+	// or activate plugin again when orientation turns back to landscape
+	mql.addListener(function(m) {
+		if(m.matches) {
+			scrollConverter.activate();
+		}	
+		else {	
+			window.location.reload();
+		}
+	});
+}());
+	
 });
