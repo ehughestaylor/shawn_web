@@ -106,7 +106,9 @@ PHOTO SECTION
   padding-top: 1% 20px 1% 212px; }
   #photo_slider tbody {
     display: table-row-group;
+    /*table*/
     vertical-align: middle;
+    /*center*/
     border-color: inherit; }
   #photo_slider tr {
     display: table-row;
@@ -122,7 +124,15 @@ PHOTO SECTION
 @media only screen and (min-width: 0px) and (max-width: 667px) {
   .content {
     left: 0px;
-    padding-top: 3em; }
+    padding-top: 3em;
+    position: relative;
+    margin: 0 auto;
+    text-align: center; }
+    .content #photo_slider {
+      width: 100%;
+      text-align: center; }
+      .content #photo_slider img {
+        height: 100%; }
 
   .home {
     padding-top: 3.60em; }
@@ -161,10 +171,12 @@ PHOTO SECTION
     max-height: 300px; }
 
   .header-mobile {
-    display: block;
-    position: fixed; }
+    display: block; }
 
   .fix {
-    display: none; } }
+    display: none; }
+
+  #photo_slider td, #photo_slider th {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

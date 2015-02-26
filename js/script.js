@@ -3,6 +3,11 @@
 $(document).ready(function(){
 	scrollConverter.activate();
 	
+	if ($(window).width() <= 667){	
+		console.log('small');
+		scrollConverter.deactivate();
+	}	
+
 	$('#contact').hide();
 	$('#social').hide();
 	$('#pricing').hide();

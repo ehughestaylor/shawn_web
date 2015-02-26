@@ -133,8 +133,8 @@ PHOTO SECTION
 	overflow-y:hidden; 
 	padding-top: 1% 20px 1% 212px;
 		tbody {
-			display: table-row-group;
-			vertical-align: middle;
+			display: table-row-group;  /*table*/
+			vertical-align: middle; /*center*/
 			border-color: inherit;
 		}
 		tr {
@@ -157,6 +157,18 @@ PHOTO SECTION
 	.content{
 		left:0px;
 		padding-top: 3em;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		
+		#photo_slider{
+			width: 100%;
+			text-align: center;
+			img{
+				height: 100%;
+			}
+		}
+
 	}
 	.home{
 		padding-top: 3.60em;
@@ -200,13 +212,15 @@ PHOTO SECTION
 	}
 	.header-mobile{
 		display: block;
-		position: fixed;
 	}
 	.fix{
 		display: none;
 	}
 
-
+	#photo_slider td, #photo_slider th{
+		display: block;
+	}
+	
 }
 
 
