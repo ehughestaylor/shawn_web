@@ -71,6 +71,19 @@ header section
 		}
 	}
 
+.navbar-header{
+	background-color: black;
+	a.navbar-brand{
+		color: white;
+	}
+}
+#navbar{
+	a{
+		color: black;
+	}
+}	
+
+
 
 /******************
 HIDDEN BLOCKS
@@ -153,6 +166,11 @@ PHOTO SECTION
 		}
 }
 
+/***************
+QUERIES
+*****************/
+
+
 @media only screen and (min-width: 0px) and (max-width: 667px){
 	.content{
 		left:0px;
@@ -220,7 +238,16 @@ PHOTO SECTION
 	#photo_slider td, #photo_slider th{
 		display: block;
 	}
-	
+		
+	#contact,
+	#social,
+	#pricing {
+	display: block;
+	width: 80%;
+	left: 10%;
+	top: 31%;
+	}
+
 }
 
 

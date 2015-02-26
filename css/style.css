@@ -52,6 +52,14 @@ header section
       text-transform: uppercase;
       letter-spacing: 1em; }
 
+.navbar-header {
+  background-color: black; }
+  .navbar-header a.navbar-brand {
+    color: white; }
+
+#navbar a {
+  color: black; }
+
 /******************
 HIDDEN BLOCKS
 *******************/
@@ -121,6 +129,9 @@ PHOTO SECTION
       height: 512px;
       cursor: pointer; }
 
+/***************
+QUERIES
+*****************/
 @media only screen and (min-width: 0px) and (max-width: 667px) {
   .content {
     left: 0px;
@@ -177,6 +188,14 @@ PHOTO SECTION
     display: none; }
 
   #photo_slider td, #photo_slider th {
-    display: block; } }
+    display: block; }
+
+  #contact,
+  #social,
+  #pricing {
+    display: block;
+    width: 80%;
+    left: 10%;
+    top: 31%; } }
 
 /*# sourceMappingURL=style.css.map */
