@@ -24,11 +24,13 @@ header section
 
 #header{
 	position: fixed;
-	left: 0.1%;
-	background-color: rgba(0,0,0,0.5);
+	left: 0;
+	width: 212px;
+	background-color: rgba(0, 0, 0, 0.5);
 	opacity: 0.9;
 	height: 512px;
 	z-index: 9;
+/* background: white; */
 
 	h1 {
 		color : white;
@@ -225,8 +227,8 @@ QUERIES
 	}
 }
 	img{
-		max-width: 400px;
-		max-height: 300px;
+		max-width: 480px;
+		max-height: 480px;
 	}
 	.header-mobile{
 		display: block;
