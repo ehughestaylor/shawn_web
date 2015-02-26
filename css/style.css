@@ -128,15 +128,21 @@ PHOTO SECTION
   #header {
     position: fixed;
     top: 0%;
-    left: 25%;
+    text-align: right;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 15px;
-    /* display: inline-block; */
+    display: inline-block;
     height: 92px; }
     #header h3 {
       display: none; }
 
+  div.text {
+    width: 100%; }
+
   #header nav {
-    text-align: center; }
+    text-align: left; }
     #header nav .contact,
     #header nav .social,
     #header nav .pricing {
