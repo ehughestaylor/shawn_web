@@ -162,7 +162,7 @@ PHOTO SECTION
 
   .header-mobile {
     display: block;
-    position: static; }
+    position: fixed; }
 
   .fix {
     display: none; } }
