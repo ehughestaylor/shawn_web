@@ -138,7 +138,9 @@ PHOTO SECTION
       display: none; }
 
   #header nav {
-    text-align: center; }
+    text-align: center;
+    position: fixed;
+    left: 1%; }
     #header nav .contact,
     #header nav .social,
     #header nav .pricing {

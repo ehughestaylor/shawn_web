@@ -47,6 +47,7 @@ header section
 
 	nav{
 		padding-right: 1em;
+
 		
 		.contact, 
 		.social,
@@ -174,6 +175,8 @@ PHOTO SECTION
 	}
 	#header nav {
 		text-align: center;
+		position: fixed;
+		left: 1%;
 	.contact, 
 	.social,
 	.pricing{
