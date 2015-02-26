@@ -1,0 +1,137 @@
+body {
+  background-color: black;
+  height: 100%;
+  font-family: "Oxygen", sans-serif; }
+
+.home {
+  padding-top: 3em; }
+
+.active {
+  color: red !important; }
+
+/*********************
+header section
+**********************/
+#header {
+  position: fixed;
+  left: 0.1%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  height: 512px;
+  z-index: 9; }
+  #header h1 {
+    color: white;
+    width: 223px;
+    text-align: center;
+    font-size: 2em; }
+  #header h3 {
+    color: white;
+    text-align: right;
+    margin-right: 0.2em;
+    padding-top: 3px;
+    margin-top: 0;
+    border-top: 1px solid black; }
+  #header nav {
+    width: 100%;
+    padding-right: 1em;
+    height: 300px; }
+    #header nav .contact,
+    #header nav .social,
+    #header nav .pricing {
+      color: white;
+      width: 100%;
+      display: block;
+      margin-bottom: 2em;
+      text-align: right;
+      padding-top: 3em;
+      text-decoration: none;
+      text-transform: lowercase;
+      transition-duration: .3s;
+      font-size: 1.2em; }
+    #header nav a:hover {
+      background-color: white;
+      color: black;
+      transition-duration: .6s;
+      text-transform: uppercase;
+      letter-spacing: 1em; }
+
+#header_hidden {
+  display: none; }
+
+/******************
+HIDDEN BLOCKS
+*******************/
+#contact,
+#social,
+#pricing {
+  width: 35%;
+  position: fixed;
+  margin: 0 auto;
+  left: 35%;
+  /* top: 10%; */
+  height: 512px;
+  z-index: 9999; }
+  #contact .text,
+  #social .text,
+  #pricing .text {
+    position: absolute;
+    top: 16%;
+    text-align: center; }
+
+#contact {
+  background-color: white;
+  z-index: 12; }
+
+#social {
+  background-color: lightgray;
+  z-index: 13; }
+
+#pricing {
+  background-color: darkgray;
+  z-index: 14; }
+
+/******************
+CONTENT SECTION
+******************/
+.content {
+  position: absolute;
+  left: 224px;
+  z-index: 1; }
+
+@media only screen and (max-width: 620px) {
+  .content {
+    left: 0px; }
+
+  #header_hidden {
+    display: block; }
+
+  #header {
+    display: none; }
+
+  .home {
+    padding-top: 3.60em; } }
+/***************
+PHOTO SECTION
+*****************/
+#photo_slider {
+  height: 80%;
+  min-height: 360px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 1% 20px 1% 212px; }
+  #photo_slider tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit; }
+  #photo_slider tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit; }
+  #photo_slider td, #photo_slider th {
+    display: table-cell;
+    vertical-align: inherit; }
+    #photo_slider td img, #photo_slider th img {
+      height: 512px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
