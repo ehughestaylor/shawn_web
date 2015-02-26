@@ -106,6 +106,10 @@ HIDDEN BLOCKS
 	z-index: 14;
 }
 
+.header-mobile{
+	display: none;
+}
+
 
 
 	
@@ -194,4 +198,13 @@ PHOTO SECTION
 		max-width: 400px;
 		max-height: 300px;
 	}
+	.header-mobile{
+		display: block;
+	}
+	.fix{
+		display: none;
+	}
+
 }
+
+

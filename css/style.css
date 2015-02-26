@@ -84,6 +84,9 @@ HIDDEN BLOCKS
   background-color: darkgray;
   z-index: 14; }
 
+.header-mobile {
+  display: none; }
+
 /******************
 CONTENT SECTION
 ******************/
@@ -155,6 +158,12 @@ PHOTO SECTION
 
   img {
     max-width: 400px;
-    max-height: 300px; } }
+    max-height: 300px; }
+
+  .header-mobile {
+    display: block; }
+
+  .fix {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
