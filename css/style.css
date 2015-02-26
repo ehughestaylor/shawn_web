@@ -152,7 +152,9 @@ PHOTO SECTION
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 0; }
-  #header nav img {
-    max-height: 400px; } }
+
+  img {
+    max-width: 400px;
+    max-height: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
