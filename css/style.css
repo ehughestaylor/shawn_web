@@ -161,7 +161,8 @@ PHOTO SECTION
     max-height: 300px; }
 
   .header-mobile {
-    display: block; }
+    display: block;
+    position: static; }
 
   .fix {
     display: none; } }
