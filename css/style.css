@@ -35,7 +35,7 @@ header section
     border-top: 1px solid black; }
   #header nav {
     padding-right: 1em; }
-    #header nav .contact,
+    #header nav .about,
     #header nav .social,
     #header nav .pricing {
       color: white;
@@ -65,7 +65,7 @@ header section
 /******************
 HIDDEN BLOCKS
 *******************/
-#contact,
+#about,
 #social,
 #pricing {
   width: 35%;
@@ -75,16 +75,25 @@ HIDDEN BLOCKS
   /* top: 10%; */
   height: 512px;
   z-index: 9999; }
-  #contact .text,
+  #about .text,
   #social .text,
   #pricing .text {
     position: absolute;
     top: 16%;
     text-align: center; }
 
-#contact {
+#about {
   background-color: white;
   z-index: 12; }
+  #about ul {
+    float: right;
+    padding-right: 1em; }
+    #about ul li {
+      text-decoration: none;
+      list-style-type: none; }
+  #about ul.left {
+    float: left;
+    padding-left: 0em; }
 
 #social {
   background-color: lightgray;
@@ -132,6 +141,25 @@ PHOTO SECTION
       cursor: pointer; }
 
 /***************
+Footer
+*****************/
+footer {
+  position: fixed;
+  bottom: 5%;
+  font-size: 0.7em;
+  left: 40%;
+  color: white;
+  text-align: center; }
+
+.copy {
+  font-size: 1.0em;
+  cursor: pointer; }
+
+.elliott {
+  font-size: 1.0em;
+  color: white; }
+
+/***************
 QUERIES
 *****************/
 @media only screen and (min-width: 0px) and (max-width: 667px) {
@@ -166,7 +194,7 @@ QUERIES
   div.text {
     width: 100%; }
 
-  #header nav .contact,
+  #header nav .about,
   #header nav .social,
   #header nav .pricing {
     display: inline;
@@ -192,12 +220,15 @@ QUERIES
   #photo_slider td, #photo_slider th {
     display: block; }
 
-  #contact,
+  #about,
   #social,
   #pricing {
     display: block;
     width: 80%;
     left: 10%;
-    top: 31%; } }
+    top: 31%; }
+
+  footer {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

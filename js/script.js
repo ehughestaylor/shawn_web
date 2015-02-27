@@ -10,14 +10,14 @@
 
 
 $(document).ready(function(){
-	$('#contact').hide();
+	$('#about').hide();
 	$('#social').hide();
 	$('#pricing').hide();
 	$('#header').fadeIn();
 
-	$('.contact').on('click',function(){
+	$('.about').on('click',function(){
 		$(this).toggleClass('active');
-		$('#contact').toggle("slide", { direction: "right"  }, 500);
+		$('#about').toggle("slide", { direction: "right"  }, 500);
 	});
 
 	$('.social').on('click',function(){
@@ -33,7 +33,6 @@ $(document).ready(function(){
 	$('#my_elem').mousewheel(function(event) {
 	    console.log(event.deltaX, event.deltaY, event.deltaFactor);
 	});
-
 
 	(function () {
     var mql = window.matchMedia("(orientation: landscape)");
@@ -52,5 +51,5 @@ $(document).ready(function(){
 		}
 	});
 }());
-	
+
 });

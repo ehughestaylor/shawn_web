@@ -48,7 +48,7 @@ header section
 
 	nav{
 		padding-right: 1em;
-		.contact, 
+		.about, 
 		.social,
 		.pricing
 		{
@@ -90,7 +90,7 @@ header section
 /******************
 HIDDEN BLOCKS
 *******************/
-#contact,
+#about,
 #social,
 #pricing{
 	width: 35%;
@@ -108,9 +108,21 @@ HIDDEN BLOCKS
 		text-align: center;
 	}
 }
-#contact {
+#about {
 	background-color: white;
 	z-index: 12;
+	ul {
+		float: right;
+		padding-right: 1em;
+		li{
+			text-decoration: none;
+			list-style-type: none;
+		}
+	}
+	ul.left{
+		float: left;
+		padding-left: 0em;
+	}
 }
 #social{
 	background-color: lightgray;
@@ -169,6 +181,29 @@ PHOTO SECTION
 }
 
 /***************
+Footer
+*****************/
+
+footer{
+	position: fixed;
+	bottom: 5%;
+	font-size: 0.7em;
+	left: 40%;
+	color: white;
+	text-align: center;
+}
+
+.copy {
+	font-size: 1.0em;
+	cursor: pointer;
+}
+.elliott {
+	font-size: 1.0em;
+	color: white;
+}
+
+
+/***************
 QUERIES
 *****************/
 
@@ -211,7 +246,7 @@ QUERIES
 		width: 100%;
 	}
 	#header nav {
-	.contact, 
+	.about, 
 	.social,
 	.pricing{
 		display: inline;
@@ -241,13 +276,16 @@ QUERIES
 		display: block;
 	}
 		
-	#contact,
+	#about,
 	#social,
 	#pricing {
 	display: block;
 	width: 80%;
 	left: 10%;
 	top: 31%;
+	}
+	footer{
+		display: none;
 	}
 
 }
