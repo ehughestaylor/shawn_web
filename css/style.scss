@@ -14,7 +14,7 @@ body {
 	padding-top: 3em;
 }
 .active{
-	color: red!important;
+	color: #F47204!important;
 }
 
 
@@ -106,31 +106,72 @@ HIDDEN BLOCKS
 		position: absolute;
 		top: 16%;
 		text-align: center;
+		font-size: 1.3em;
 	}
 }
+
+
 #about {
-	background-color: white;
+	background-color: rgba(164,163,147,0.9);
 	z-index: 12;
 	ul {
-		float: right;
+		float: left;
 		padding-right: 1em;
 		li{
 			text-decoration: none;
 			list-style-type: none;
 		}
 	}
-	ul.left{
-		float: left;
-		padding-left: 0em;
+	ul.right{
+		float: right;
+		padding-top: 7em;
+		padding-right: 2em;
+	}
+	h1 {
+		margin-bottom: 1em;
+	}
+	p{
+		text-align: left;
 	}
 }
 #social{
-	background-color: lightgray;
+	background-color: rgba(164,163,147,0.87);
 	z-index: 13;
+	.text{
+		h1{
+			margin-top: -2em;
+		}
+		ul{
+			list-style-type: none;
+			font-size: 3em;
+			li{
+				cursor: pointer;
+				transition-duration:1s;
+				margin:0.4em 0;
+			}
+			li>i:hover{
+				color: white;
+				transform:rotate(360deg);	
+				transition-duration:0.7s;
+			}
+		}
+	}
 }
 #pricing{
-	background-color: darkgray;
+	background-color: rgba(164,163,147,0.85);
 	z-index: 14;
+	h1 {
+		margin-top: -1em;
+		margin-bottom: 1.4em;
+	}
+	.text{
+		text-align: left;
+		padding-left: 1em;
+		h1{
+			text-align: center;
+		}
+
+	}
 }
 
 .header-mobile{
@@ -220,7 +261,7 @@ QUERIES
 			width: 100%;
 			text-align: center;
 			img{
-				height: 100%;
+				width:100%;		
 			}
 		}
 
@@ -290,4 +331,56 @@ QUERIES
 
 }
 
+@media only screen and (min-width: 0px) and (max-width: 667px){
+#about,
+#social,
+#pricing{
+	width: 60%;
+	position: fixed;
+	margin: 0 auto;
+	left: 0%;
+	top: 40%;
+	font-size: 0.9em;
+	/* top: 10%; */
+	height: 320px;
+	z-index: 9999;
+
+
+	.text{
+		position: absolute;
+		top: 16%;
+		text-align: center;
+		font-size: 1.3em;
+		h1{
+			display: none;
+		}
+	}
+}
+#social{
+	ul{
+		margin-top: -1em;
+	}
+}
+#pricing{
+	font-size: 0.7em;
+	margin-top: -3em;
+	h1{
+		margin-top: -3em;
+
+	}
+}
+#about{
+	font-size: 0.6em;
+	h1{
+		padding-top: 0em;
+	}
+	ul{
+		padding-top: 0em;
+	}
+	ul.right{
+		padding-top: 1em;
+	}
+}
+	
+}
 
