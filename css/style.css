@@ -322,15 +322,11 @@ QUERIES
       padding-top: 1em; }
 
   #login {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
     color: white;
-    height: 0px;
-    right: 3%;
+    left: 4%;
     z-index: 9999;
-    top: 1049%;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    position: relative; }
     #login .username,
     #login .password,
     #login .submit {
