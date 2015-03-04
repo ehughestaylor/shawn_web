@@ -1,7 +1,4 @@
 $(document).ready(function(){
-	$('#about').hide();
-	$('#social').hide();
-	$('#pricing').hide();
 	$('#header').fadeIn();
 
 	$('.about').on('click',function(){
