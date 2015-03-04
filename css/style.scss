@@ -86,6 +86,26 @@ header section
 }	
 
 
+/******************
+LOGIN
+*******************/
+#login{
+	position: fixed;
+	top: 1%;
+	color: white;
+	right: 3%;
+	font-size: 0.8em;
+	.username,
+	.password,
+	.submit{
+		display: inline-block;
+		input{
+			background-color: black;
+			border: 1px solid gray;
+			color: white;
+		}
+	}
+}
 
 /******************
 HIDDEN BLOCKS
@@ -256,7 +276,7 @@ QUERIES
 		position: relative;
 		margin: 0 auto;
 		text-align: center;
-		
+		margin-bottom: 3em;
 		#photo_slider{
 			width: 100%;
 			text-align: center;
@@ -381,6 +401,26 @@ QUERIES
 		padding-top: 1em;
 	}
 }
-	
+#login{
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	color: white;
+	height: 0px;
+	right: 3%;
+	z-index: 9999;
+	top: 1049%;
+	font-size: 0.8em;
+	.username,
+	.password,
+	.submit{
+		display: inline-block;
+		input{
+			background-color: black;
+			border: 1px solid gray;
+			color: white;
+		}
+	}
+}
 }
 

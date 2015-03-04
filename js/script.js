@@ -1,14 +1,3 @@
-// function horiScroll(){
-// 	if ($(window).width() >= 667){	
-// 		console.log('small');
-// 		scrollConverter.activate();
-// 	} else{
-// 		scrollConverter.deactivate();
-// 	}
-// };
-
-
-
 $(document).ready(function(){
 	$('#about').hide();
 	$('#social').hide();
