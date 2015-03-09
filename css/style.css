@@ -272,7 +272,7 @@ QUERIES
   #about,
   #social,
   #pricing {
-    display: block;
+    display: none;
     width: 80%;
     left: 10%;
     top: 31%; }
